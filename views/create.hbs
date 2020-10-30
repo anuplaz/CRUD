@@ -1,0 +1,19 @@
+{{>head}}
+{{>header}}
+
+<form action="/created" method="POST">
+    <p>Name:
+        <input type="text" name="uname" required tabindex="1">
+    </p>
+
+    <p>Email
+        <input type="email" name="email" required tabindex="2">
+    </p>
+
+    <p> <input type="reset" tabindex="4">
+        <input type="submit" name="submit" tabindex="3">
+    </p>
+</form>
+
+{{msg}}  {{username}}
+{{>footer}}

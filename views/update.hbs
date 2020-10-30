@@ -1,0 +1,20 @@
+{{>head}}
+{{>header}}
+
+<form action="/updated" method="POST">
+    <p>
+        <input type="hidden" name="uid" value="{{id}}"  required tabindex="1">
+    </p>
+    <p>Name:
+        <input type="text" name="uname" value="{{username}}" required tabindex="1">
+    </p>
+
+    <p>Email
+        <input type="email" name="email"  value="{{email}}" required tabindex="2">
+    </p>
+
+    <p>  <input type="submit" name="submit" tabindex="3">
+    </p>
+</form>
+{{user}}
+{{>footer}}

@@ -1,0 +1,7 @@
+{{>head}}
+{{>header}}
+
+{{#each users}}
+    <div class="row">{{id}} {{name}} {{email}} <a href="/delete/{{id}}">delete</a> <a href="/update/{{id}}">update</a> </div>
+{{/each}}
+{{>footer}}
